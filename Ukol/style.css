@@ -1,0 +1,154 @@
+
+.background {
+    background-image: url('summer-beach-2.jpg'); 
+    background-size: 100%; 
+    
+}
+
+
+.nadpis1 {
+    font-family: Impact;
+    font-size: 4rem;
+    text-align: center;
+    color: transparent;
+    opacity: 90%;
+    -webkit-text-stroke-color: rgb(255, 255, 255);
+    -webkit-text-stroke-width: 1px;
+}
+
+.nadpis2 {
+    font-family: impact;
+    font-size: 2rem;
+    text-align: center;
+    color: rgb(255, 255, 255);
+    -webkit-text-stroke-color: black;
+    -webkit-text-stroke-width: 1px;
+    position: absolute;
+    bottom: 430px;
+    left: 31%;
+}
+
+.nadpis3 {
+    font-family: Impact;
+    font-size: 2rem;
+    text-align: center;
+    opacity: 70%;
+    color: transparent;
+    -webkit-text-stroke-color: rgb(0, 0, 0);
+    -webkit-text-stroke-width: 1px;
+}
+
+
+.seznam1 {
+    list-style-type: upper-roman;
+    position: absolute;
+    left: 16px;
+    font-size: 30px;
+    font-family: Impact;
+    -webkit-text-stroke-color: black;
+    -webkit-text-stroke-width: 1px;
+}
+
+.seznam1 li:nth-child(1) {
+    color: rgb(0, 247, 255); 
+}
+
+.seznam1 li:nth-child(2) {
+    color: rgb(0, 202, 142); 
+}
+
+.seznam1 li:nth-child(3) {
+    color: blue; 
+}
+
+
+.seznam2 {
+    list-style-type: none; 
+    font-size: 25px;
+    font-family: Impact;
+    -webkit-text-stroke-color: black;
+    -webkit-text-stroke-width:1px;
+    color: white;
+    position: absolute;
+    right: 16px;
+}
+
+.seznam2 li {
+    position: relative;
+    padding-left: 30px; 
+}
+
+.seznam2 li::before {
+    content: ''; 
+    position: absolute;
+    left: 0;
+    bottom: 7px;
+    width: 12px;
+    height: 12px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 50%; 
+
+}
+
+.seznam2 li:nth-child(2)::before {
+    background-color: rgb(38, 0, 255); 
+    border-radius: 30%;
+}
+
+.seznam2 li:nth-child(3)::before {
+    background-color: rgb(43, 255, 0); 
+    width: 0;
+    height: 0;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-bottom: 15px solid rgb(43, 255, 0);
+    border-radius: 10%;
+}
+
+
+.autor{
+    position: absolute;
+    left: 42%;
+    bottom: -10px;
+    font-family: Impact;
+    color: white;
+    opacity: 60%;
+    font-size: 25px;
+    -webkit-text-stroke-color: black;
+    -webkit-text-stroke-width: 0.8px;
+
+
+}
+
+
+.Btn {
+    position: absolute;
+    font-size: 90px;
+    left: 43%;
+    bottom: 40%;
+    font-family: Impact;
+    color: white;
+    -webkit-text-stroke-color: black;
+    -webkit-text-stroke-width: 2px;
+    border-radius: 15%;
+    background-color: transparent;
+    opacity: 0;  
+    border-color: white;
+    border-width: 4px;
+    
+  
+    animation: slideFadeIn 0.5s ease-out forwards;
+}
+
+
+@keyframes slideFadeIn {
+    0% {
+        opacity: 0;  
+        top: -100px; 
+    }
+    100% {
+        opacity: 1; 
+        top: 40%;
+    }
+}
+

@@ -1,0 +1,9 @@
+body{
+    background-color: rgb(112, 187, 199);
+
+}
+
+.Rezervace{
+    -webkit-text-stroke-color: black;
+    -webkit-text-stroke-width: 2px;
+}
